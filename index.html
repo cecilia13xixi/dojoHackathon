@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $("#beach").hover(function () {
+                $(".container").css("background-image", "url('beach.jpg')");
+            });
+            $("#forest").hover(function () {
+                $(".container").css("background-image", "url('forest.jpg')");
+            });
+            $("#planet").hover(function () {
+                $(".container").css("background-image", "url('earth.jpg')");
+            });
+            $("#dojo").hover(function () {
+                $(".container").css("background-image", "url('dojo.jpg')");
+            });
+            $("#snow").hover(function () {
+                $(".container").css("background-image", "url('snow.jpg')");
+            });
+            $("#matrix").hover(function () {
+                $(".container").css("background-image", "url('matrix.jpg')");
+            });
+            $("button").click(function () {
+                $(".menu").hide();
+                $(".playersBox").show();
+            });
+            $(".playersBox").hide();
+            $("#playerOneSelect").change(function () {
+                $("img[name=image-1]").attr("src", $(this).val());
+            });
+            $("#playerTwoSelect").change(function () {
+                $("img[name=image-2]").attr("src", $(this).val());
+            });
+
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="menu">
+            <h3>Select Arena</h3>
+            <div class="buttons">
+                <button id="beach">beach</button>
+                <button id="forest">forest</button>
+                <button id="planet">planet</button>
+                <button id="dojo">dojo</button>
+                <button id="snow">snow</button>
+                <button id="matrix">matrix</button>
+            </div>
+        </div>
+
+        <div class="playersBox">
+            <h3>Select Players</h3>
+            <div class="playerList"></div>
+            <h2>Player one</h2>
+            <select name="Characters" id="playerOneSelect">
+                <option value="">Select a player</option>
+                <option value="leo.png">Leo</option>
+                <option value="donny.png">Donatello</option>
+                <option value="raphael.png">Ralphael</option>
+                <option value="mikey.png">Mikey</option>
+            </select>
+
+            <div class="playerList">
+                <h2>Player two</h2>
+                <select name="Characters" id="playerTwoSelect">
+                    <option value="">Select a player</option>
+                    <option value="leo.png">Leo</option>
+                    <option value="donny.png">Donatello</option>
+                    <option value="raphael.png">Ralphael</option>
+                    <option value="mikey.png">Mikey</option>
+                </select>
+            </div>
+
+        </div>
+        <div class = "bottom">
+            <div class="left">
+            <img src="" alt="" id="playerOne" name="image-1">
+            </div>
+            <div class="right">
+            <img src="" alt="" id="playerTwo" name="image-2">
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

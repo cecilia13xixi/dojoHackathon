@@ -1,0 +1,65 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+.container {
+    width: 1480px;
+    min-height: 900px;
+    background: black;
+    outline: 1px dotted red;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+/* .menu {
+    background: orange;
+    width: 400px;
+    min-height: 200px; 
+    margin-top: 200px;
+} */
+
+.players{
+    background: pink;
+    width: 400px;
+}
+.playersBox, .menu{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 200px;
+    height: auto;
+    background: #ddddef7d;
+    border: 5px solid grey;
+    border-radius: 10px;
+}
+
+button {
+     background: white;
+    border-radius: 10px;
+    display: inline-block;
+    width: 72px;
+    height: 30px;
+    margin: 2px;
+}
+.test{
+    text-align: left;
+}
+
+
+.left{
+    vertical-align: top;
+    text-align: left;
+    display:inline-block;
+    width: 700px;
+    height: 500px;
+}
+
+.right {
+    vertical-align: top;
+    text-align: right;
+    display: inline-block;
+    width: 700px;
+    height: 500px;
+}
